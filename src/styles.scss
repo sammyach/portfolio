@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body{
+  height: 100vh;
+}
+
+body{
+  background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: orange rgb(11, 28, 49); ;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(11, 28, 49);;//#ffc800;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 20px;
+  border: 3px solid orange;
+}

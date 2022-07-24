@@ -1,0 +1,24 @@
+.container{
+  height: 100%;
+  padding: 2rem 8rem;
+}
+
+header h1{
+  font-size: 3rem;
+  color: rgb(17, 42, 75);
+  padding-bottom: 1rem;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.main{
+  width: 100%;
+  // flex: 1;
+}
+
+.navigation{
+  position: absolute;
+  right: 50px;
+}

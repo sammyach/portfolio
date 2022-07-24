@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+p{
+  padding: 1rem;
+}
+
+.name{
+  font-size: 4rem;
+  color: orange;
+  font-family: Kaushan Script;
+}
+
+.name .first, .fa{
+  color: rgb(17, 42, 75);
+
+}
+
+.job-title{
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.fa{
+  font-size: 4rem;
+}
