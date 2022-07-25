@@ -5,9 +5,22 @@
 
 header h1{
   font-size: 3rem;
-  color: rgb(17, 42, 75);
+  color: orange;
+  // color: rgb(17, 42, 75);
   padding-bottom: 1rem;
 }
+
+header h1::before{
+  content: "<";
+  color: rgb(17, 42, 75);
+  // color: orange;
+}
+header h1::after{
+  content: "/>";
+  color: rgb(17, 42, 75);
+  // color: orange;
+}
+
 
 .wrapper{
   display: flex;
@@ -19,6 +32,11 @@ header h1{
 }
 
 .navigation{
-  position: absolute;
-  right: 50px;
+  // position: absolute;
+  // animation: fromLeft 1s linear forwards;
+}
+
+@keyframes fromLeft {
+  from{right: 1px;}
+  to{right: 50px;}
 }
