@@ -10,19 +10,49 @@
   align-items: center;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  animation: updown 2s linear .5s infinite;
+}
+
+@keyframes updown{
+  0%{ transform: translateY(10px);}
+  50%{ transform: translateY(-10px);}
+  100%{transform: translateY(10px);}
 }
 
 .navigation:hover{
   background: rgb(17, 42, 75);
+  animation-play-state: paused;
 }
 
 li{
+  position: relative;
   // padding: 2rem;
   height: 50px;
   width: 50px;
   // border-radius: 50%;
   // background: rgb(235, 150, 71);
   margin: 1rem;
+  opacity: 0;
+
+}
+
+ li:nth-child(1){
+  animation: slidefromright .4s linear 0s forwards;
+}
+ li:nth-child(2){
+  animation: slidefromright .4s linear .2s forwards;
+}
+ li:nth-child(3){
+  animation: slidefromright .4s linear .4s forwards;
+}
+li:nth-child(4){
+  animation: slidefromright .4s linear .6s forwards;
+}
+
+@keyframes slidefromright{
+  0%{ opacity: 1; right: -50px;}
+  50%{ opacity: 1; right: 10px;}
+  100%{ opacity: 1; right: 0px;}
 }
 
 a{
@@ -38,12 +68,11 @@ a{
   padding: .3rem;
 }
 
-.active-link{
-    li{
-      border-top: 3px solid orange;
-      border-radius: 50%;
-    }
-  }
+// li:has(.active-link){
+//   border-top: 3px solid orange;
+//   border-radius: 50%;
+// }
+
 
 
 // .active-link{
@@ -54,3 +83,5 @@ a{
 //   }
 
 // }
+
+
