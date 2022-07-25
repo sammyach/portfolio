@@ -48,6 +48,9 @@ li{
 li:nth-child(4){
   animation: slidefromright .4s linear .6s forwards;
 }
+li:nth-child(5){
+  animation: slidefromright .4s linear .8s forwards;
+}
 
 @keyframes slidefromright{
   0%{ opacity: 1; right: -50px;}
