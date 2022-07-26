@@ -1,8 +1,10 @@
 <div class="container">
-  <header>
+
+  <header *ngIf="!loading">
     <h1> S A </h1>
   </header>
-  <div class="wrapper">
+  <app-loader *ngIf="loading"></app-loader>
+  <div *ngIf="!loading" class="wrapper">
     <article class="main">
       <router-outlet></router-outlet>
     </article>

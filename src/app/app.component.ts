@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  loading = true;
+  constructor(){
+    setTimeout(()=>{ this.loading = false},4000)
+  }
 }
