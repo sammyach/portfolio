@@ -40,3 +40,28 @@ header h1::after{
   from{right: 1px;}
   to{right: 50px;}
 }
+
+@media (max-width: 786px){
+  .container{
+    padding: 1rem;
+  }
+
+  .wrapper{
+    flex-direction: column;
+  }
+
+  header h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .main{
+    padding-bottom: 80px;
+  }
+  .navigation{
+    position: fixed;
+    bottom: -25px;
+    left: -15px;
+  }
+}

@@ -37,3 +37,22 @@ ul{
 li{
   padding-left: 1rem;
 }
+
+@media (max-width: 786px){
+  .container{
+    margin-right: 0;
+    padding: 1rem;
+  }
+  .page-title{
+    text-align: center;
+  }
+  article{
+    margin-top: 2rem;
+    overflow-y: scroll;
+    height: calc(100vh - 13rem);
+  }
+
+  p{
+    padding-right: .8rem;
+  }
+}

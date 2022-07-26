@@ -36,3 +36,15 @@ p{
 .fa{
   font-size: 4rem;
 }
+
+@media (max-width: 786px) {
+  .container{
+    margin-top: 8rem;
+  }
+  .name, .fa{
+    font-size: 2rem;
+  }
+  .job-title{
+    font-size: 1.5rem;
+  }
+}
