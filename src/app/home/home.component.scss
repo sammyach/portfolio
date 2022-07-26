@@ -7,15 +7,35 @@
   font-size: 1.2rem;
 }
 
-p{
+p, .container div{
   padding: 1rem;
+  opacity: 0;
+}
+p:nth-child(1){
+  animation: popup .5s linear .1s forwards;
+}
+p:nth-child(2){
+  animation: popup .5s linear .3s forwards, updown 2s linear .8s infinite;
+}
+p:nth-child(3){
+  animation: popup .5s linear .5s forwards;
+}
+
+.container div{
+  animation: popup .5s linear .6s forwards;
+}
+
+@keyframes popup{
+  0%{transform: scale(10%);}
+  50%{transform: scale(50%); opacity: .5;}
+  100%{opacity: 1; transform: scale(100%);}
 }
 
 .name{
   font-size: 4rem;
   color: orange;
   font-family: Kaushan Script;
-  animation: updown 2s linear infinite;
+  // animation: updown 2s linear infinite;
 }
 
 .name .first, .fa{

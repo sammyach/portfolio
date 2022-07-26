@@ -32,10 +32,29 @@ ul{
   list-style-type: '-' ;
   padding-left: 1rem;
   color: orange;
+  opacity: 0;
 }
 
 li{
   padding-left: 1rem;
+}
+p{
+  opacity: 0;
+}
+p:nth-child(1){
+  animation: popup .5s linear .1s forwards;
+}
+p:nth-child(2){
+  animation: popup .5s linear .3s forwards;
+}
+p:nth-child(3), ul{
+  animation: popup .5s linear .5s forwards;
+}
+
+@keyframes popup{
+  0%{opacity: 0; transform: scale(10%);}
+  50%{opacity: 0.4; transform: scale(50%);}
+  100%{opacity: 1; transform: scale(100%);}
 }
 
 @media (max-width: 786px){
