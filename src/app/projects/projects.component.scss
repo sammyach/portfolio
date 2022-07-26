@@ -9,9 +9,9 @@
   font-family: monospace;
 }
 
-.page-title{
+// .page-title{
 
-}
+// }
 .page-title::after{
   content: '_';
   color: orange;
@@ -116,6 +116,7 @@ img{
   .container{
     margin-right: 0;
     padding: 1rem;
+    height: 83vh;
   }
   .projects{
     margin-bottom: 0;
@@ -132,6 +133,6 @@ img{
   }
 
   article{
-    height: calc(100vh - 13rem);
+    height: 73vh; //calc(100vh - 13rem);
   }
 }
