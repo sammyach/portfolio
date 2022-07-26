@@ -1,0 +1,1 @@
+*{box-sizing:border-box;padding:0;margin:0}html,body{height:100vh}body{background:#43C6AC;background:linear-gradient(to left,#191654,#43C6AC)}*{scrollbar-width:thin;scrollbar-color:orange rgb(11,28,49)}*::-webkit-scrollbar{width:5px}*::-webkit-scrollbar-track{background:rgb(11,28,49)}*::-webkit-scrollbar-thumb{background-color:orange;border-radius:20px;border:3px solid orange}
