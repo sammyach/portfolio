@@ -18,14 +18,14 @@
 }
 
 article{
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 1rem;
   line-height: 1.5;
   text-align: justify;
 }
 
-p:first-child{
-  margin-bottom: 1rem;
+p{
+  margin-bottom: .5rem;
 }
 
 ul{
@@ -47,7 +47,10 @@ p:nth-child(1){
 p:nth-child(2){
   animation: popup .5s linear .3s forwards;
 }
-p:nth-child(3), ul{
+p:nth-child(3){
+  animation: popup .5s linear .5s forwards;
+}
+p:nth-child(4), ul{
   animation: popup .5s linear .5s forwards;
 }
 
@@ -69,7 +72,7 @@ p:nth-child(3), ul{
   article{
     margin-top: 2rem;
     overflow-y: scroll;
-    height: 80vh; //calc(100vh - 13rem);
+    height: 73vh; //calc(100vh - 13rem);
   }
 
   p{
