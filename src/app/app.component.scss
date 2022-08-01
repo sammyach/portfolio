@@ -3,6 +3,12 @@
   padding: 2rem 8rem;
 }
 
+:host ::ng-deep .particles-js-canvas-el{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
 header h1{
   font-size: 3rem;
   color: orange;
