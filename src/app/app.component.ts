@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
     setTimeout(()=>{ this.loading = false},4000)
   }
   ngOnInit(): void {
-    particlesJS.load('particles-js', '../assets/particles.json', null);
+    particlesJS.load('particles-js', 'assets/json/particles.json', null);
   }
 
 }
