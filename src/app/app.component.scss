@@ -54,6 +54,7 @@ header h1::after{
 
   .wrapper{
     flex-direction: column;
+    justify-content: space-between;
   }
 
   header h1{
@@ -62,12 +63,12 @@ header h1::after{
     font-weight: 900;
   }
 
-  .main{
-    padding-bottom: 80px;
-  }
-  .navigation{
-    position: fixed;
-    bottom: -25px;
-    left: -15px;
-  }
+  // .main{
+  //   padding-bottom: 80px;
+  // }
+  // .navigation{
+  //   position: fixed;
+  //   bottom: -25px;
+  //   left: -15px;
+  // }
 }
